@@ -12,5 +12,39 @@
     <script src="scripts/script.js" defer></script>
   </head>
   <body>
+    <div class="wrap">
+      <div class="player__wrap">
+        <div class="player__info">
+          <div class="player__name">Player 1</div>
+          <div class="player__score">0</div>
+        </div>
+        <div class="player__current__wrap">
+          <div class="player__current">
+            <div>Current</div>
+            <div>0</div>
+          </div>
+        </div>
+      </div>
+      <div class="player__wrap">
+        <div class="player__info">
+          <div class="player__name">Player 2</div>
+          <div class="player__score">0</div>
+        </div>
+        <div class="player__current__wrap">
+          <div class="player__current">
+            <div>Current</div>
+            <div>0</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn_reset btn__reset btn__default" id="-btn__reset">🔄️New Game</button>
+      <button class="btn_reset btn__roll btn__default" id="-btn__roll">🎲Roll Dice</button>
+      <button class="btn_reset btn__hold btn__default" id="-btn__hold">‼️Hold</button>
+
+      <div class="img__wrap">
+        <img class="img" id="dice" width="150px" src="assets/images/dice-1.svg" alt="white dice with red dots" />
+      </div>
+    </div>
   </body>
 </html>
