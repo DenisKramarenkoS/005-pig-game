@@ -164,3 +164,61 @@ body {
 .img__wrap:active {
   transform: translate(50%, -50%) rotate(90deg) scale(0.9);
 }
+
+@media (max-width: 550px) {
+  .wrap {
+    flex-direction: column;
+  }
+
+  .player__wrap {
+    width: 100%;
+    flex-direction: row;
+    &:nth-child(1) {
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 0px;
+      border-top-right-radius: 50px;
+    }
+
+    &:nth-child(2) {
+      border-end-end-radius: 50px;
+      border-end-start-radius: 50px;
+      border-top-right-radius: 0px;
+    }
+  }
+
+  .img__wrap {
+    top: 50%;
+    right: 75%;
+    width: 100px;
+    height: 100px;
+  }
+
+  .btn__default {
+    font-size: 1.3rem;
+  }
+
+  .btn__reset {
+    top: 43%;
+    right: 30%;
+  }
+
+  .btn__roll {
+    top: 50%;
+    right: 30%;
+  }
+
+  .btn__hold {
+    top: 57%;
+    right: 30%;
+  }
+
+  .player__info {
+    gap: 10px;
+    justify-content: center;
+
+  }
+  .player__name {
+    font-size: 2rem;
+    margin-top: 0px;
+  }
+}
